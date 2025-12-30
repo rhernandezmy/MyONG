@@ -1,7 +1,10 @@
+import uuid
 from django.db import models
 
 # Modelo para registrar socios de la ONG
 class Socio(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    dni = models.CharField(max_length=15, unique=True, help_text="DNI o NIE del socio")
     nombre = models.CharField(max_length=100)
     apellidos = models.CharField(max_length=200)
     fecha_nacimiento = models.DateField()

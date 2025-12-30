@@ -6,7 +6,7 @@ De cada socio tendremos una serie de datos personales y su dirección.
 
 ## Modelo: Socio
 * Identificador UUID
-* DNI/NIE
+[X] DNI/NIE
 * [X] Nombre y apellidos por separado
 * [X] Fecha de nacimiento
 * [X] Teléfono
