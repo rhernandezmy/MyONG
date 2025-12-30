@@ -5,8 +5,8 @@ La asociación esta compuesta por unos socios.
 De cada socio tendremos una serie de datos personales y su dirección.
 
 ## Modelo: Socio
-* Identificador UUID
-[X] DNI/NIE
+* [X] Identificador UUID
+* [X] DNI/NIE
 * [X] Nombre y apellidos por separado
 * [X] Fecha de nacimiento
 * [X] Teléfono
