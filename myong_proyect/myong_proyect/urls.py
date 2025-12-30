@@ -17,10 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-from myong_proyect import socios
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # Añadimos la url de la aplicacion socios
-    path('socios/', include(socios.urls)),
+    path('socios/', include('socios.urls')),     # Añadimos la url de la aplicacion socios
 ]
