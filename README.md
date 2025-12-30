@@ -7,9 +7,9 @@ De cada socio tendremos una serie de datos personales y su dirección.
 ## Modelo: Socio
 * Identificador UUID
 * DNI/NIE
-* Nombre y apellidos por separado
-* Fecha de nacimiento
-* Teléfono
+* [X] Nombre y apellidos por separado
+* [X] Fecha de nacimiento
+* [X] Teléfono
 * Dirección con:
     * calle
     * numero
@@ -19,6 +19,6 @@ De cada socio tendremos una serie de datos personales y su dirección.
     * provincia
     * pais
 
-* IBAN (opcional, solo si quiere domiciliación bancaria)
-* Fecha de alta (auto)
+* [X] IBAN (opcional, solo si quiere domiciliación bancaria)
+* [X] Fecha de alta (auto)
 * Info tutor si es menor: DNI tutor, nombre tutor, apellidos tutor y telefono
