@@ -7,6 +7,10 @@ authors = ["rhernandezmy <rhernandezmy@fpvirtualaragon.es>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 Django = ">=5.1,<6.0"
+python-decouple = "^3.8"
+django-crispy-forms = "^2.5"
+crispy-bootstrap5 = "^2025.6"
+psycopg = {extras = ["binary"], version = "^3.3.2"}
 
 [tool.poetry.dev-dependencies]
 
