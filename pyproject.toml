@@ -7,6 +7,7 @@ authors = ["rhernandezmy <rhernandezmy@fpvirtualaragon.es>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 Django = ">=5.1,<6.0"
+python-decouple = "^3.8"
 
 [tool.poetry.dev-dependencies]
 
