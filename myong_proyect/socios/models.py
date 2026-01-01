@@ -34,9 +34,9 @@ class Tutor(models.Model):
         return self.nombre
     
 ## Modelo Socio:
-# Si un socio es menor de edad, necesitará un tutor legal (mayor de edad).
+# Si un socio es menor de edad, necestará un tutor legal ( mayor de edad).
 # Si un socio no domicilia sus pagos, el campo IBAN puede quedar vacío y
-# además lo identificamos por el campo domiciliado
+# además lo identicamos por el campo docimiciliado
 # Los socios pueden tener distintos roles.
 class Socio(models.Model):
     ROLES = [('ROOT', 'Superusuario'), ('ADMIN', 'Directivo'), ('USER', 'Usuario')]
