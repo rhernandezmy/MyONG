@@ -26,7 +26,7 @@
                     </span>
                 </td>
                 <td>
-                  
+                    <!-- Aquí puedes añadir acciones -->
                 </td>
             </tr>
             {% endfor %}
@@ -37,7 +37,8 @@
     <div class="card mt-4">
         <div class="card-body">
             <h5>Cambiar año</h5>
-            <form method="get" action="{% url 'pagos_socio_by_year' socio_id=socio_id year=2024 %}">
+            <form method="get" 
+                  action="{% url 'pagos_socio_by_year' socio_id=socio.uuid year=2024 %}">
                 <div class="form-group">
                     <select name="year" id="year-select" class="form-control" 
                             onchange="this.form.action = this.form.action.replace(/\d{4}\/$/, this.value + '/'); this.form.submit();">
