@@ -60,14 +60,14 @@ class SocioForm(forms.ModelForm):
             'fecha_nacimiento', 'telefono', 'documento_identidad',
             'menor_edad', 'domicilia_pago', 'IBAN'
         ]
-        widgets = {
+        widgets = { # Personalización de widgets- Los placeholders ayudan al usuario
             'nombre': forms.TextInput(attrs={'placeholder': 'Miguel'}),
             'apellidos': forms.TextInput(attrs={'placeholder': 'Aparicio Sánchez'}),
             'email': forms.EmailInput(attrs={'placeholder': 'socio@fpvirtualaragon.com'}),
             'fecha_nacimiento': forms.DateInput(attrs={'type': 'date'}),
             'documento_identidad': forms.TextInput(attrs={'placeholder': 'DNI/NIE'}),
             'IBAN': forms.TextInput(attrs={'placeholder': 'ES9121000418450200051332'}),
-            'role': forms.Select(attrs={'class': 'form-select'}),
+            'role': forms.Select(attrs={'class': 'form-select'}), # Select para roles
         }
     
     def clean(self):

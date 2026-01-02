@@ -64,13 +64,13 @@ SOCIOS = json.loads(SOCIOS_JSON)
 def lista_socios(request):
     # Ahora vamos a recuperar los socios desde la "base de datos"
     socios = Socio.objects.select_related('direccion').all()
-    return render(request, 'socios/socio_list.html', {'socios': socios})
-   # return render(request, 'socios/socio_list.html', {'socios': SOCIOS})
+    return render(request, 'socios/socio_list.html', {'socios': socios}) # Usando datos de la base de datos
+    # return render(request, 'socios/socio_list.html', {'socios': SOCIOS}) # Usando datos simulados
 
 
 # VISTA DE DETALLE DE UN SOCIO
 def detalle_socio(request, socio_id):
-    socios = Socio.objects.select_related('direccion').all() 
+    socios = Socio.objects.select_related('direccion').all() # Usando datos de la base de datos
     print("SOCIOS ", list(socios))  # imprime todos los socios  
     socio = next((s for s in socios if str(s.id) == str(socio_id)), None)
     print("SOCIO ", socio)  # imprime el socio encontrado
