@@ -12,7 +12,7 @@
           {{ socio.nombre }} {{ socio.apellidos }}
         </a>
         — {{ socio.email }} - 
-        <a href="{% url 'detalle_socio' socio.id %}">
+        <a href="{% url 'pagos_socio_current_year' socio.id %}">
           Ver pagos
         </a>
       </li>
