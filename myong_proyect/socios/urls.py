@@ -1,5 +1,6 @@
 from django.urls import path
 from socios.views import detalle_socio, lista_socios, alta_socio, pagos_socio_current_year, pagos_socio_by_year
+
 urlpatterns = [
     path('<uuid:socio_id>/', detalle_socio, name='detalle_socio'),
     path('', lista_socios, name='lista_socios'),
