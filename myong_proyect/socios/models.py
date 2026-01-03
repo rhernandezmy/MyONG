@@ -75,7 +75,7 @@ class Socio(models.Model):
 
 ## Modelo para pagos de socios
 ## Los pagos estarán relacionados con un socio
-## Cada pago tendrá una fecha, un importe y un estado (pendiente, completado, fallido)
+## Cada pago tendrá una fecha, un importe y un estado (pendiente, completado, en tramite, devuelto)
 ## Los pagos se pueden hacer por transferencia y tendrán que validarse por un admin
 ## Otros pagos se realizan mediante remesa bancaria: Si se devuelve el recibo, 
 ## el estado del pago será devuelto.
